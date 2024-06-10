@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Category</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="homepage.css">
+
+</head>
+
+
+<body>
+
+    <!-- header section starts      -->
+
+    <header>
+
+        <a href="#" style="font-size:25px;"><img class="logo" src="./images/logok.jpg" style=width:80px;height:80px;>Korean Food and Drinks</a>
+
+        <nav class="navbar">
+            <a class="active" href="/home">Home</a>
+            <a href="/kategori">Category</a>
+            <a href="/popular">Popular</a>
+            <a href="/review">FAQ & Review</a>
+            <!-- <a href="#">Logout</a> -->
+            <a href="/login">Login</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+
+    </header>
+
+    <!-- header section ends-->
+
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+
+    <!-- MAKANAN POPULER -->
+
+    <section class="popular" id="popular" style="margin-top: 70px;">
+
+        <h3 class="sub-heading"> Dessert Category </h3>
+        <h1 class="heading"> Choose Dessert you are looking for </h1>
+
+        <div class="box-container">
+            <!-- SHOW MENU -->
+            <div class="box"><div class="image"><img src="./images/bingsu.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Chocolate Bingsu</h3></a><p>Chocolate bingsu is a delicious variation of the traditional Korean shaved ice dessert, bingsu. It features finely shaved ice topped with rich chocolate syrup, chocolate shavings, chocolate sauce, and sometimes additional toppings like chocolate cookies, brownie pieces, or chocolate ice cream. The combination of creamy chocolate flavors with the light and fluffy texture of the shaved ice makes chocolate bingsu a decadent and indulgent treat, especially popular among chocolate lovers. It's a delightful dessert enjoyed in Korea and beyond, particularly during hot weather as a refreshing and satisfying sweet treat.</p><span class="price" style="font-size: 18px">Rp40.000</span></div></div>
+            <div class="box"><div class="image"><img src="./images/hotteok.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Hotteok</h3></a><p>Hotteok is a popular Korean street food and sweet pancake that is enjoyed especially during the colder months. It is made from a dough of wheat flour, water, milk, sugar, and yeast, which is then filled with a sweet mixture typically consisting of brown sugar, honey, chopped peanuts, and cinnamon. The filled dough is then flattened into a disc shape and fried until golden brown and crispy on the outside, while the inside remains soft and chewy with the melted filling. Hotteok is often served piping hot and is a beloved treat for its warm, sweet, and comforting flavors.</p><span class="price" style="font-size: 18px">Rp15.000</span></div></div>
+        </div>
+
+    </section>
+
+    <!-- popular section ends -->
+
+
+    <!-- footer section start -->
+    <footer>
+        <section class="footer" id="footer">
+
+            <div class="footer-container">
+
+                <div class="box">
+                    <h3>Locations</h3>
+                    <a href="#">Yogyakarta</a>
+                    <a href="#">Bantul</a>
+                    <a href="#">Sleman</a>
+                    <a href="#">Depok</a>
+                    <a href="#">Kulon Progo</a>
+                </div>
+
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home">home</a>
+                    <a href="#kategori">Category</a>
+                    <a href="#popular">Popular</a>
+                    <a href="#review">FAQ & Review</a>
+                </div>
+    
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="#">+62821-1359-1641</a>
+                    <a href="#">+62881-8679-264</a>
+                    <a href="#">+62822-4179-5668</a>
+                    <a href="#">KoreanFood@KFnD.com</a>
+                    <a href="#">Bantul, Yogyakarta - 1000001</a>
+                </div>
+    
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <a class="social-media-icon" href="https://www.facebook.com/fathonahutami.ningsih/"><span
+                        class="fab fa-facebook fa-2x"></span></a>
+                    <a class="social-media-icon" href="https://x.com/AboutThisFood"><span
+                        class="fab fa-twitter fa-2x"></span></a>
+                    <a class="social-media-icon" href="https://www.instagram.com/koreanfoodguide/?hl=en"><span
+                        class="fab fa-instagram fa-2x"></span></a>
+                    <a class="social-media-icon" href="https://www.linkedin.com/in/fathonahutami/"><span
+                        class="fab fa-linkedin fa-2x"></span></a>
+                </div>
+    
+            </div>
+    
+            <div class="credit"> copyright @2024 KFnD | Fathonah Utami Ningsih | 21502241021 | Design Web</div>
+
+        </section>
+    </footer>
+    <!-- footer section end -->
+    <!-- <div class="loader-container">
+        <img src="../static/images/loader.gif" alt="">
+    </div> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

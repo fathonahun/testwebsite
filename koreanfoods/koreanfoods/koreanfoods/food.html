@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Category</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="homepage.css">
+
+</head>
+
+
+<body>
+
+    <!-- header section starts      -->
+
+    <header>
+
+        <a href="#" style="font-size:25px;"><img class="logo" src="./images/logok.jpg" style=width:80px;height:80px;>Korean Food and Drinks</a>
+
+
+        <nav class="navbar">
+            <a href="/home">Home</a>
+            <a class="active" href="/kategori">Category</a>
+            <a href="/popular">Popular</a>
+            <a href="/review">FAQ & Review</a>
+            <!-- <a href="#">Logout</a> -->
+            <a href="/login">login</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+
+    </header>
+
+    <!-- header section ends-->
+
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+
+    <!-- MAKANAN POPULER -->
+
+    <section class="popular" id="popular" style="margin-top: 70px;">
+
+        <h3 class="sub-heading"> Food Category </h3>
+        <h1 class="heading"> Choose Foods you are looking for</h1>
+
+        <div class="box-container">
+            <!-- SHOW MENU -->
+            <div class="box"><div class="image"><img src="./images/jjampong.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Jjampong</h3></a><p>Jjampong is a popular Korean-Chinese noodle soup known for its spicy, flavorful broth. It typically contains a variety of seafood such as squid, shrimp, and mussels, along with vegetables like cabbage, onions, and carrots. Pork or beef is often added for extra depth of flavor. The soup is seasoned with gochugaru (Korean red chili flakes) and other spices, creating a rich, spicy taste. Served with thick wheat noodles, jjampong is a hearty and satisfying dish commonly found in Korean-Chinese restaurants.</p><span class="price" style="font-size: 18px">Rp60.000</span></div></div>
+            <div class="box"><div class="image"><img src="./images/jjajangmyeon.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Jjajangmyeon</h3></a><p>
+                Jjajangmyeon is a Korean-Chinese noodle dish topped with a thick, savory black bean sauce. The sauce is made from chunjang (a salty black soybean paste), diced pork or beef, and vegetables such as onions, zucchini, and potatoes. The dish is garnished with cucumber strips or peas and served over thick wheat noodles. Jjajangmyeon is a beloved comfort food in Korea, often enjoyed during casual meals and celebrations.</p><span class="price" style="font-size: 18px">Rp50.000</span></div></div>
+            <div class="box"><div class="image"><img src="./images/bulgogi.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Bulgogi</h3></a><p>Bulgogi is a popular Korean dish made from thinly sliced beef that is marinated in a mixture of soy sauce, sugar, sesame oil, garlic, and other seasonings. The marinated beef is then grilled or stir-fried, resulting in a flavorful and tender dish. Bulgogi is often served with rice, lettuce wraps, and various side dishes (banchan). It is known for its sweet and savory taste and is a staple in Korean cuisine, enjoyed both at home and in restaurants.</p><span class="price" style="font-size: 18px">Rp200.000</span></div></div>
+            <div class="box"><div class="image"><img src="./images/ganjanggejang.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Ganjang Gejang</h3></a><p>Ganjang Gejang is a traditional Korean dish consisting of raw crabs marinated in soy sauce. The crabs are typically cleaned and then soaked in a flavorful marinade made from soy sauce, garlic, ginger, sugar, and sometimes additional ingredients like chili peppers and sesame oil. This marinating process not only preserves the crabs but also infuses them with a rich, savory flavor. Ganjang Gejang is often referred to as "rice thief" because its salty and umami-rich taste pairs exceptionally well with steamed rice.</p><span class="price" style="font-size: 18px">Rp450.000</span></div></div>
+            
+            <div class="box"><div class="image"><img src="./images/Gyeranjjim.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Gyeranjjim</h3></a><p>Gyeranjjim is a Korean steamed egg dish. It's made by whisking eggs and then gently cooking them with water or broth, often in a hot stone bowl. The dish is typically seasoned with ingredients like salt, green onions, and sesame oil. The result is a light, fluffy, and savory custard-like texture. Gyeranjjim is commonly served as a side dish (banchan) in Korean meals and is appreciated for its simplicity and comforting taste.</p><span class="price" style="font-size: 18px">Rp80.000</span></div></div>
+            <div class="box"><div class="image"><img src="./images/naengmyeon.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Naengmyeon</h3></a><p>Naengmyeon is a Korean cold noodle dish typically enjoyed in the summer. It features long, thin noodles made from buckwheat or sweet potatoes, served in a cold, tangy broth or mixed with a spicy sauce. The dish is often garnished with slices of cold beef, cucumber, pear, and a boiled egg. There are two main varieties: **mul naengmyeon** (with broth) and **bibim naengmyeon** (with spicy sauce). Naengmyeon is known for its refreshing taste and chewy texture.</p><span class="price" style="font-size: 18px">Rp70.000</span></div></div>
+            <div class="box"><div class="image"><img src="./images/samgyetang.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Samgyetang</h3></a><p>Samgyetang is a traditional Korean chicken soup made with a whole young chicken stuffed with glutinous rice, ginseng, garlic, jujube fruits, and other medicinal herbs. The dish is simmered for hours until the chicken is tender and infused with the flavors of the ingredients. Samgyetang is typically enjoyed during the hot summer months in Korea, as it is believed to have nourishing and revitalizing properties that help to combat the heat and restore energy. It's served piping hot and often accompanied by a bowl of salt and ground black pepper for seasoning to taste.</p><span class="price" style="font-size: 18px">Rp140.000</span></div></div>
+            <div class="box"><div class="image"><img src="./images/kimchijigae.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Kimchi Jjigae</h3></a><p>Kimchi jjigae is a popular Korean stew made with kimchi, tofu, pork, or other proteins, and various vegetables. The base of the stew is typically fermented kimchi, which gives the dish its characteristic tangy and spicy flavor. Additional ingredients such as pork belly, tofu, onions, garlic, and green onions are often added to enhance the taste. The stew is simmered until the flavors meld together, creating a rich and comforting dish that is often enjoyed with a bowl of steamed rice. Kimchi jjigae is a beloved comfort food in Korean cuisine, especially during cold weather.</p><span class="price" style="font-size: 18px">Rp100.000</span></div></div>
+            
+            <div class="box"><div class="image"><img src="./images/Samgyeopsal.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Samgyeopsal</h3></a><p>Samgyeopsal is a popular Korean dish consisting of thick slices of pork belly grilled at the table. The name "samgyeopsal" literally translates to "three-layered flesh," referring to the layers of meat, fat, and skin in pork belly. The pork slices are usually cooked over a charcoal or gas grill until crispy on the outside and tender on the inside. Samgyeopsal is typically served with a variety of accompaniments such as lettuce leaves, ssamjang (spicy dipping sauce), sliced garlic, fresh vegetables like green onions and peppers, and various kimchi. It's a beloved dish in Korean cuisine, often enjoyed during social gatherings with friends and family.</p><span class="price" style="font-size: 18px">Rp200.000</span></div></div>
+            <div class="box"><div class="image"><img src="./images/koreanfriedchicken.jpg" alt=""></div><div class="content"><a href="/detail_menu/'+ menu.id +'"><h3>Korean Fried Chicken</h3></a><p>Korean fried chicken, often abbreviated as KFC, is a popular dish in Korean cuisine known for its crispy, crunchy texture and flavorful seasoning. Unlike traditional American fried chicken, Korean fried chicken is typically double-fried, resulting in an extra crispy coating while keeping the meat inside juicy and tender. It is often coated in a variety of sauces or seasonings, such as spicy gochujang (Korean chili paste), sweet soy garlic, or honey butter. Korean fried chicken is commonly served as an appetizer, snack, or main course in Korean restaurants, and it has gained popularity worldwide for its delicious taste and addictive crunch.</p><span class="price" style="font-size: 18px">Rp100.000</span></div></div>
+
+        </div>
+
+    </section>
+
+    <!-- popular section ends -->
+
+
+    <!-- footer section start -->
+    <footer>
+        <section class="footer" id="footer">
+
+            <div class="footer-container">
+
+                <div class="box">
+                    <h3>Locations</h3>
+                    <a href="#">Yogyakarta</a>
+                    <a href="#">Bantul</a>
+                    <a href="#">Sleman</a>
+                    <a href="#">Depok</a>
+                    <a href="#">Kulon Progo</a>
+                </div>
+
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home">home</a>
+                    <a href="#kategori">Category</a>
+                    <a href="#popular">Popular</a>
+                    <a href="#review">FAQ & Review</a>
+                </div>
+
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="#">+62821-1359-1641</a>
+                    <a href="#">+62881-8679-264</a>
+                    <a href="#">+62822-4179-5668</a>
+                    <a href="#">KoreanFood@KFnD.com</a>
+                    <a href="#">Bantul, Yogyakarta - 1000001</a>
+                </div>
+
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <a class="social-media-icon" href="https://www.facebook.com/fathonahutami.ningsih/"><span
+                        class="fab fa-facebook fa-2x"></span></a>
+                    <a class="social-media-icon" href="https://x.com/AboutThisFood"><span
+                        class="fab fa-twitter fa-2x"></span></a>
+                    <a class="social-media-icon" href="https://www.instagram.com/koreanfoodguide/?hl=en"><span
+                        class="fab fa-instagram fa-2x"></span></a>
+                    <a class="social-media-icon" href="https://www.linkedin.com/in/fathonahutami/"><span
+                        class="fab fa-linkedin fa-2x"></span></a>
+                </div>
+            </div>
+            <div class="credit"> copyright @2024 KFnD | Fathonah Utami Ningsih | 21502241021 | Design Web</div>
+        </section>
+    </footer>
+    <!-- footer section end -->
+    <!-- <div class="loader-container">
+        <img src="../static/images/loader.gif" alt="">
+    </div> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
